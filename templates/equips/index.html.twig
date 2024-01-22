@@ -8,7 +8,7 @@
         <h1 id="titolEquip">Detalles del Equipo</h1>
         <ul class="paragrafEquip">
         <a href="{{ path('inici') }}">
-    <img src="{{ asset('imgs/perfil.png') }}" alt="Imatge Inici" class="imatgeInici">
+    <img src="{{ asset('imgs/' ~ equip.imatge) }}" alt="Logo del Equipo" class="imatgeEquip">
 </a>
             <li><strong>Código:</strong> {{ equip.codi }}</li>
             <li><strong>Nombre:</strong> {{ equip.nom }}</li>

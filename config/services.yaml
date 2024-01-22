@@ -19,6 +19,13 @@ services:
             - '../src/DependencyInjection/'
             - '../src/Entity/'
             - '../src/Kernel.php'
+    App\Service\ServeiDadesEquips: ~
 
+    App\Controller\EquipsController:
+        arguments:
+            $dades: '@App\Service\ServeiDadesEquips'
+    App\Controller\IniciController:
+        arguments:
+            $serveiDadesEquips: '@App\Service\ServeiDadesEquips'
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

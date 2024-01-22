@@ -16,7 +16,8 @@ h1#titolEquip {
     background-color:#f2e7c3;
    }
    .imatgeEquip{
-    width: 400px;
+    width: 200px!important;
+    height: 200px!important;
     margin: 10px;
    }
    body{
