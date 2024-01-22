@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% block title %}Contactes{% endblock %}
+{% block body %}
+<h1 id="titolInici">Capçalera H1</h1>
+    <p id="paragrafInici">Aquest és un paràgraf amb text.</p>
+    <a href="{{ path('app_equips', {'codi': 1}) }}">
+    <img src="{{ asset('imgs/perfil.png') }}" alt="Imatge Inici" class="imatgeInici">
+</a>
+{% endblock %}
+
